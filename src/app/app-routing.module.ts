@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { ClassesComponent } from './classes/classes.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'gallery', component: GalleryComponent },
   { path: 'contact', component: ContactComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'sponsors', component: SponsorsComponent },
 ];
 
 @NgModule({
