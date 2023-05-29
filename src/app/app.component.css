@@ -1,16 +1,17 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5); /* Zwart met 50% transparantie */
+  background-color: rgba(0, 0, 0, 0.905); /* Zwart met 50% transparantie */
   height: 60px;
   display: flex;
   align-items: center;
-  padding: 0 30px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding-left: 30px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.55);
 }
 
 .navbar a {
