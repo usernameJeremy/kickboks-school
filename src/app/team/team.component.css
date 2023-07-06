@@ -1,40 +1,52 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-body {
-    background: url("../../assets/logoZwart.jpg") center / cover no-repeat, black;
-    background-size: cover;
-    justify-content: center;
-    align-items: center;
-    background-size: 40%;
-    display: flex;
-  }
+h1{
+  color: #ffffff;
+  text-decoration: solid;
 
-  .outerbox{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+}
 
-  .trainer-container{
-    background: rgba(0, 0, 0, 0.6); /* 60% opaque black background */
-    border: 1px solid #00bfff; /* Border to make it stand out more */
-    width: 60%;
-    margin: 15px;
-    padding: 15px;
-   
-  }
+.container {
+  position: relative;
+  overflow-y: scroll;
+  height: 100vh;
+  /* We gebruiken nu viewport height om de container de volledige hoogte van het scherm te geven */
+  background-image: url("../../assets/logoZwart.jpg");
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  /* Verhoog de z-index zodat de inhoud erboven wordt weergegeven */
+}
 
-  .trainer-picture{
-    height: 100px;
-    width: 60px;
-  }
+.outerbox {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  /* Voeg ruimte toe aan de bovenkant voor de navigatiebalk */
+}
 
-  h2, p {
-    color: #ffffff;
-  }
+.trainer-container {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #00bfff;
+  width: 60%;
+  margin: 15px;
+  padding: 15px;
+}
+
+.trainer-picture {
+  height: 160px;
+  width: 100px;
+  object-fit: cover;
+}
+
+h2,
+p {
+  color: #ffffff;
+}

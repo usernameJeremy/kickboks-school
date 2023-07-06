@@ -1,57 +1,21 @@
-<div fxLayout="column" fxLayout.lt-md="row">
-   
-    <div class="mobile" *ngIf="isMobile">
-        <div class="navbar">
-            <div class="menu">
-                <button class="menu-button" (click)="toggleMenu()">
-                    Menu
-                </button>
-                <div class="dropdown-menu" [ngStyle]="{ display: menuOpen ? 'block' : 'none' }">
-                    <a routerLink="home" (click)="toggleMenu()">Home</a>
-                    <a routerLink="classes" (click)="toggleMenu()">Lessen</a>
-                    <a routerLink="contact" (click)="toggleMenu()">Contact</a>
-                    <a routerLink="sponsors" (click)="toggleMenu()">Sponors</a>
-                    <a routerLink="meetTheTeam" (click)="toggleMenu()">Team Jeff-Lee</a>
-                    <a routerLink="gallery" (click)="toggleMenu()">Galerij</a>
-                </div>
-            </div>
-            <div class="logo-navbar">
-                <img src="./../../assets/logoZwart.jpg" alt="Logo" class="logo" />
-            </div>
-        </div>
+<div class="mobile">
+  <div class="navbar">
+    <div class="menu">
+      <button class="menu-button" (click)="toggleMenu()">Menu</button>
+      <div
+        class="dropdown-menu"
+        [ngStyle]="{ display: menuOpen ? 'block' : 'none' }"
+      >
+        <a routerLink="home" (click)="toggleMenu()">Home</a>
+        <a routerLink="classes" (click)="toggleMenu()">Lessen</a>
+        <a routerLink="contact" (click)="toggleMenu()">Contact</a>
+        <a routerLink="sponsors" (click)="toggleMenu()">Sponors</a>
+        <a routerLink="meetTheTeam" (click)="toggleMenu()">Team Jeff-Lee</a>
+        <a routerLink="gallery" (click)="toggleMenu()">Galerij</a>
+      </div>
     </div>
-   
-    <div class="desktop" *ngIf="!isMobile">
-        <div class="navigation">
-            <div class="logoDesktop">
-                <img src="./../../assets/logoZwart.jpg" alt="Logo" class="logo-img" />
-
-                <div class="box-3">
-                    <div class="btn btn-three">
-                        <span><a routerLink="home">Home</a></span>
-                    </div>
-
-                    <div class="btn btn-three">
-                        <span> <a routerLink="classes">Lessen</a></span>
-                    </div>
-
-                    <div class="btn btn-three">
-                        <span >Contact</span>
-                    </div>
-
-                    <div class="btn btn-three">
-                        <span routerLink="/user/profile">Sponors</span>
-                    </div>
-
-                    <div class="btn btn-three">
-                        <span routerLink="/user/nutrition">Team Jeff-Lee</span>
-                    </div>
-
-                    <div class="btn btn-three">
-                        <span routerLink="/user/training/schedules">Galerij</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="logo-navbar">
+      <img src="./../../assets/logoZwart.jpg" alt="Logo" class="logo" />
     </div>
+  </div>
 </div>
