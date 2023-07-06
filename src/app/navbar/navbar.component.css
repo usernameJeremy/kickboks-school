@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color: #3f8c40;
+    background-color: #000000;
     border: solid 5px black;
   
   }
@@ -14,20 +14,20 @@
     width: 100%;
   }
   .menu{
-    border: solid 5px greenyellow;
+    border: solid 5px rgb(0, 0, 0);
   }
   
   
   .logo-navbar{
   
-    border: solid 5px pink;
+    border: solid 5px rgb(0, 0, 0);
   }
   
   .menu-button {
-    background-color: black;
-    border: solid 5px black;
+    background-color: rgb(255, 255, 255);
+    border: solid 5px rgb(255, 255, 255);
     border-radius: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
     height: 50px;
     width: 50px;
   
@@ -39,7 +39,7 @@
     position: absolute;
     left: 30px;
     top: 90px;
-    background-color: #3f8c40;
+    background-color: #000000;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@
   
   .logo {
     height: 60px;
-    mix-blend-mode: color-burn;
+    
   }
   
   /* DESKTOP */
@@ -68,8 +68,7 @@
   
   
   .box-3 {
-    background-color: #66A182;
-  
+    background-color: #000000;
     height: 1000px;
   }
   .btn {

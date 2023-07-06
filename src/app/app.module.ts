@@ -10,6 +10,8 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TeamComponent } from './team/team.component';
 import { GallerijComponent } from './gallerij/gallerij.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -20,11 +22,14 @@ import { NavbarComponent } from './navbar/navbar.component';
     SponsorsComponent,
     TeamComponent,
     GallerijComponent,
-    NavbarComponent
+    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

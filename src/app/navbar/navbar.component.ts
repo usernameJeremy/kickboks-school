@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
+import { MatMenuTrigger} from '@angular/material/menu';
 
 @Component({
   selector: 'app-navbar',
@@ -6,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  
   public isMobile!: boolean;
-  menuOpen = false;
+  public menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 
   ngOnInit() {
     this.checkDevice();
@@ -18,5 +23,8 @@ export class NavbarComponent implements OnInit {
   checkDevice() {
     this.isMobile = window.innerWidth < 800; // Adjust the breakpoint as per your needs
   }
+
+  
+
 
 }

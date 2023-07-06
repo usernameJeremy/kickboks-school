@@ -3,16 +3,16 @@
     <div class="mobile" *ngIf="isMobile">
         <div class="navbar">
             <div class="menu">
-                <button class="menu-button" (click)="menuOpen = !menuOpen">
-                    -<br />-<br />-
+                <button class="menu-button" (click)="toggleMenu()">
+                    Menu
                 </button>
                 <div class="dropdown-menu" [ngStyle]="{ display: menuOpen ? 'block' : 'none' }">
-                    <a routerLink="home">Home</a>
-                    <a routerLink="classes">Lessen</a>
-                    <a routerLink="contact">Contact</a>
-                    <a routerLink="sponsors">Sponors</a>
-                    <a routerLink="meetTheTeam">Team Jeff-Lee</a>
-                    <a routerLink="gallery">Galerij</a>
+                    <a routerLink="home" (click)="toggleMenu()">Home</a>
+                    <a routerLink="classes" (click)="toggleMenu()">Lessen</a>
+                    <a routerLink="contact" (click)="toggleMenu()">Contact</a>
+                    <a routerLink="sponsors" (click)="toggleMenu()">Sponors</a>
+                    <a routerLink="meetTheTeam" (click)="toggleMenu()">Team Jeff-Lee</a>
+                    <a routerLink="gallery" (click)="toggleMenu()">Galerij</a>
                 </div>
             </div>
             <div class="logo-navbar">
