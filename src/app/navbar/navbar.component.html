@@ -1,0 +1,57 @@
+<div fxLayout="column" fxLayout.lt-md="row">
+   
+    <div class="mobile" *ngIf="isMobile">
+        <div class="navbar">
+            <div class="menu">
+                <button class="menu-button" (click)="menuOpen = !menuOpen">
+                    -<br />-<br />-
+                </button>
+                <div class="dropdown-menu" [ngStyle]="{ display: menuOpen ? 'block' : 'none' }">
+                    <a routerLink="home">Home</a>
+                    <a routerLink="classes">Lessen</a>
+                    <a routerLink="contact">Contact</a>
+                    <a routerLink="sponsors">Sponors</a>
+                    <a routerLink="meetTheTeam">Team Jeff-Lee</a>
+                    <a routerLink="gallery">Galerij</a>
+                </div>
+            </div>
+            <div class="logo-navbar">
+                <img src="./../../assets/logoZwart.jpg" alt="Logo" class="logo" />
+            </div>
+        </div>
+    </div>
+   
+    <div class="desktop" *ngIf="!isMobile">
+        <div class="navigation">
+            <div class="logoDesktop">
+                <img src="./../../assets/logoZwart.jpg" alt="Logo" class="logo-img" />
+
+                <div class="box-3">
+                    <div class="btn btn-three">
+                        <span><a routerLink="home">Home</a></span>
+                    </div>
+
+                    <div class="btn btn-three">
+                        <span> <a routerLink="classes">Lessen</a></span>
+                    </div>
+
+                    <div class="btn btn-three">
+                        <span >Contact</span>
+                    </div>
+
+                    <div class="btn btn-three">
+                        <span routerLink="/user/profile">Sponors</span>
+                    </div>
+
+                    <div class="btn btn-three">
+                        <span routerLink="/user/nutrition">Team Jeff-Lee</span>
+                    </div>
+
+                    <div class="btn btn-three">
+                        <span routerLink="/user/training/schedules">Galerij</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

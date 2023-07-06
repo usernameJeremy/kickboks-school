@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TeamComponent } from './team/team.component';
 import { GallerijComponent } from './gallerij/gallerij.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { GallerijComponent } from './gallerij/gallerij.component';
     ContactComponent,
     SponsorsComponent,
     TeamComponent,
-    GallerijComponent
+    GallerijComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
