@@ -23,7 +23,7 @@ body {
   .trainer-container{
     background: rgba(0, 0, 0, 0.6); /* 60% opaque black background */
     border: 1px solid #00bfff; /* Border to make it stand out more */
-    max-width: 60%;
+    width: 60%;
     margin: 15px;
     padding: 15px;
    
