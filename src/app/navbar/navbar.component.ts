@@ -21,7 +21,7 @@ export class NavbarComponent implements OnInit {
   }
 
   checkDevice() {
-    this.isMobile = window.innerWidth < 800; // Adjust the breakpoint as per your needs
+    this.isMobile = window.innerWidth < 1200; // Adjust the breakpoint as per your needs
   }
 
   
