@@ -4,23 +4,3 @@
 }
 
 
-
-
-.navbar {
-  background-color: rgba(0, 0, 0, 0.905); /* Zwart met 50% transparantie */
-  height: 60px;
-  display: flex;
-  align-items: center;
-  padding-left: 30px;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.55);
-}
-
-.navbar a {
-  color: white; /* Witte tekst voor de links */
-  text-decoration: none; /* Verwijder de onderstreping van de links */
-  margin-right: 20px; /* Voeg wat ruimte toe aan de rechterkant van elke link */
-}
-
-.navbar a:hover {
-  color: #007BFF; /* Verander de kleur van de links naar blauw als je er met de muis overheen gaat */
-}

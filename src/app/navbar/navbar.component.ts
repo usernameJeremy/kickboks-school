@@ -7,7 +7,7 @@ import { Component, OnInit, } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  public isMobile!: boolean;
+
   public menuOpen = false;
 
   toggleMenu() {
@@ -15,13 +15,9 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.checkDevice();
-    window.addEventListener('resize', () => this.checkDevice());
+
   }
 
-  checkDevice() {
-    this.isMobile = window.innerWidth < 1200; // Adjust the breakpoint as per your needs
-  }
 
 
 

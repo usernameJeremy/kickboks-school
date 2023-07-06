@@ -11,15 +11,14 @@ h1{
 }
 
 .container {
+
   position: relative;
   overflow-y: scroll;
   height: 100vh;
-  /* We gebruiken nu viewport height om de container de volledige hoogte van het scherm te geven */
   background-image: url("../../assets/logoZwart.jpg");
   background-size: cover;
-  background-position: center;
-  z-index: 0;
-  /* Verhoog de z-index zodat de inhoud erboven wordt weergegeven */
+  background-position: center ;
+  z-index: 1;
 }
 
 .outerbox {
@@ -29,7 +28,7 @@ h1{
   align-items: center;
   flex-direction: column;
   padding-top: 60px;
-  /* Voeg ruimte toe aan de bovenkant voor de navigatiebalk */
+  z-index: 1;
 }
 
 .trainer-container {
@@ -38,6 +37,7 @@ h1{
   width: 60%;
   margin: 15px;
   padding: 15px;
+  z-index: 1;
 }
 
 .trainer-picture {
