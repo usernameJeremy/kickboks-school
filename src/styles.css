@@ -1,4 +1,137 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --main-menucolor: black;
+  --main-linecolor: rgba(0, 220, 240, 0.533);
+  --main-buttoncolor: rgb(255, 255, 255);
+  --main-headlinecolor: rgb(255, 255, 255);
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  background-color: var(--main-buttoncolor);
+  color: black;
+  margin: 10px;
+  border-radius: 15px;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+
+}
+
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: url("./assets/logoZwart.jpg") center 5% / contain repeat-y;
+}
+
+
+h1,h2,h3,h4{
+  color: var(--main-headlinecolor);
+}
+
+img{
+  margin: 1rem;
+  height: auto;
+  width: 15rem;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.logo{
+  width: 75px;
+}
+strong{
+  font-size: 1.4rem;
+}
+
+p {
+font-weight: 500;
+font-size: 1.2rem;
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+}
+
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 15px;
+  background-color: var(--main-menucolor);
+  border-bottom: solid  var(--main-linecolor);
+}
+
+
+
+.menu-button {
+  background-color: var(--main-buttoncolor);
+  border-radius: 15px;
+  height: 75px;
+  width: 75px;
+
+}
+.menu-button-text{
+  color: black;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.669);
+  padding: 20px;
+  border-radius: 15px;
+
+}
+
+
+.btn-register {
+  background-color: var(--main-buttoncolor);
+  text-align: center;
+  border-radius: 15px;
+}
+
+
+.logo {
+  height: 80px;
+}
+
+
+.section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.729);
+  border: solid var(--main-linecolor);
+  border-radius: 15px;
+  width: 85%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+  padding: 5px;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+
+
+
+
+
+
