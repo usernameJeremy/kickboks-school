@@ -12,10 +12,10 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'classes', component: ClassesComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'sponsors', component: SponsorsComponent },
   { path: 'meetTheTeam', component: TeamComponent },
   { path: 'gallery', component: GallerijComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

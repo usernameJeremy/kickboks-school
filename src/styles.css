@@ -28,7 +28,8 @@ a {
 
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
-  background: url("./assets/logoZwart.jpg") center 5% / contain repeat-y;
+background: black;
+
 }
 
 
@@ -56,6 +57,7 @@ font-weight: 500;
 font-size: 1.2rem;
   line-height: 1.6;
   color: rgb(255, 255, 255);
+  text-align: center;
 }
 
 
@@ -125,6 +127,9 @@ font-size: 1.2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  background: url("./assets/logoZwart.jpg") center 3% / contain repeat-y;
+
 
 }
 
