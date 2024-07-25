@@ -7,6 +7,8 @@ import { ContactComponent } from './contact/contact.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TeamComponent } from './team/team.component';
 import { GallerijComponent } from './gallerij/gallerij.component';
+import { AdminComponent } from './admin/admin.component';
+import {InstellingenComponent} from './instellingen/instellingen.component'
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -15,6 +17,8 @@ const routes: Routes = [
   { path: 'sponsors', component: SponsorsComponent },
   { path: 'meetTheTeam', component: TeamComponent },
   { path: 'gallery', component: GallerijComponent },
+  { path: 'admin', component: AdminComponent}, //TODO beveiliggen
+  { path: 'instellingen', component: InstellingenComponent}, //TODO beveiliggen
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

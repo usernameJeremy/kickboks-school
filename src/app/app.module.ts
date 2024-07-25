@@ -12,6 +12,10 @@ import { GallerijComponent } from './gallerij/gallerij.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
+import { AdminComponent } from './admin/admin.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { InstellingenComponent } from './instellingen/instellingen.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +27,8 @@ import { MatMenuModule } from '@angular/material/menu';
     TeamComponent,
     GallerijComponent,
     NavbarComponent,
+    AdminComponent,
+    InstellingenComponent,
     
   ],
   imports: [
@@ -30,6 +36,8 @@ import { MatMenuModule } from '@angular/material/menu';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
+    FormsModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

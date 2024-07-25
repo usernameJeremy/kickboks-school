@@ -1,0 +1,29 @@
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+label{
+    color: #ccc;
+}
+  .form-group {
+    margin-bottom: 15px;
+    
+  }
+/*   
+  .admin-container{
+    border: solid 5px yellow;
+  }
+
+  .form-group{
+    border: solid 5px green;
+  } */
+
+  .error {
+    color: red;
+    font-size: 12px;
+  }
+  
