@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { CrudService } from '../services/crud.service';
 
 @Component({
     selector: 'app-team',
@@ -12,20 +12,25 @@ export class AdminComponent {
         email: '',
         password: ''
     };
-    private apiUrl = 'https://jeff-leekickboks.nl/backend/login.php';
+ 
 
-    constructor(private http: HttpClient, private router: Router) {}
+    constructor(
+      private crudService: CrudService,
+      private router: Router,
+    ) {}
     
-    onSubmit() {
-        this.http.post(`${this.apiUrl}` , this.loginData)
-          .subscribe(response => {
-            if (response) {
-              this.router.navigate(['/instellingen']);
-            } else {
-              alert('Login failed');
-            }
-          });
-      }
+   async onSubmit() {
+     this.crudService.login(this.loginData.email, this.loginData.password)
+        .subscribe(response => {
+          console.log('response',response);
+          if (response.access_token) {
+            localStorage.setItem('jwt', response.access_token);
+            this.router.navigate(['/instellingen']);
+          } else {
+            alert('Login failed');
+          }
+        });
+    }
 
     
 }

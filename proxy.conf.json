@@ -1,0 +1,12 @@
+{
+    "/api": {
+      "target": "https://jeff-leekickboks.nl",
+      "secure": false,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api": "/backend"
+      }
+    }
+  }
+  

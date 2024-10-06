@@ -9,6 +9,7 @@ import { TeamComponent } from './team/team.component';
 import { GallerijComponent } from './gallerij/gallerij.component';
 import { AdminComponent } from './admin/admin.component';
 import {InstellingenComponent} from './instellingen/instellingen.component'
+import { authGuard } from './auth/auth.gaurd';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -17,8 +18,8 @@ const routes: Routes = [
   { path: 'sponsors', component: SponsorsComponent },
   { path: 'meetTheTeam', component: TeamComponent },
   { path: 'gallery', component: GallerijComponent },
-  { path: 'admin', component: AdminComponent}, //TODO beveiliggen
-  { path: 'instellingen', component: InstellingenComponent}, //TODO beveiliggen
+  { path: 'admin', component: AdminComponent}, 
+  { path: 'instellingen', component: InstellingenComponent, canActivate: [authGuard]}, 
   { path: '', redirectTo: '/home', pathMatch: 'full' },
 ];
 

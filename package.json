@@ -30,7 +30,7 @@
     "@angular-devkit/schematics": "~16.0.3",
     "@angular/cli": "~16.0.3",
     "@angular/compiler-cli": "^16.0.0",
-    "@nrwl/angular": "15.9.2",
+    "@nrwl/angular": "^19.5.6",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/workspace": "15.9.2",
     "@schematics/angular": "~16.0.3",
