@@ -9,7 +9,8 @@ export class CrudService {
   getToken() {
      return localStorage.getItem('jwt');
   }
-  private apiUrl = 'http://localhost:3000/'; // Backend URL
+  //private apiUrl = 'http://localhost:3000/'; // Backend URL
+  private apiUrl = 'http://localhost:3000/auth/login'; 
 
   constructor(
     private http: HttpClient,

@@ -1,0 +1,92 @@
+.gallery-section {
+    /* Hergebruik je bestaande section styling */
+    width: 92%;
+    max-width: 1400px;
+    margin: 2rem auto;
+  }
+  
+  .gallery-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    text-shadow: 0 0 10px var(--main-linecolor);
+  }
+  
+  .gallery-container {
+    width: 100%;
+    /* background: rgba(0, 0, 0, 0.5); */
+    /* border-radius: 15px; */
+    /* border: 1px solid var(--main-linecolor); */
+    /* padding: 1.5rem; */
+    /* box-shadow: 0 0 20px rgba(0, 220, 240, 0.15); */
+  }
+  
+  .gallery-grid {
+    /* ===================
+       Hoofd galerij layout
+    =================== */
+    column-count: 2;
+    column-gap: 1.2rem;
+    
+    /* Alternatief met grid (iets strakker maar minder "masonry") */
+    /* display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.2rem; */
+  }
+  
+  .gallery-item {
+    break-inside: avoid;         
+    margin-bottom: 1.2rem;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--main-linecolor);
+    background: rgba(0, 0, 0, 0.6);
+    transition: all 0.35s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .gallery-item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 30px rgba(0, 220, 240, 0.25);
+    border-color: rgba(0, 220, 240, 0.8);
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.4s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.08);
+  }
+  
+  /* ────────────── Responsive ────────────── */
+  
+  @media (min-width: 600px) {
+    .gallery-grid {
+      column-count: 3;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .gallery-grid {
+      column-count: 4;
+    }
+  }
+  
+  @media (min-width: 500) {
+    .gallery-grid {
+      column-count: 5;
+    }
+  }
+  
+  /* Optioneel: als je een paar foto's groter wilt maken (Pinterest gevoel) */
+  .gallery-item.big {
+    column-span: all;           /* neemt volledige breedte */
+    /* of bij grid versie: */
+    /* grid-column: span 2; */
+    /* grid-row: span 2; */
+  }

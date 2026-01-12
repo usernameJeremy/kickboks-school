@@ -7,7 +7,6 @@ import { ClassesComponent } from './classes/classes.component';
 import { ContactComponent } from './contact/contact.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { TeamComponent } from './team/team.component';
-import { GallerijComponent } from './gallerij/gallerij.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatMenuModule } from '@angular/material/menu';
@@ -15,6 +14,8 @@ import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { InstellingenComponent } from './instellingen/instellingen.component';
+import { GallerijComponent } from './gallerij/gallerij.component';
+import { LightboxComponent } from './lightbox/lightbox.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,12 @@ import { InstellingenComponent } from './instellingen/instellingen.component';
     ContactComponent,
     SponsorsComponent,
     TeamComponent,
-    GallerijComponent,
     NavbarComponent,
     AdminComponent,
     InstellingenComponent,
-    
+    GallerijComponent,
+    LightboxComponent
+
   ],
   imports: [
     BrowserModule,
@@ -37,6 +39,7 @@ import { InstellingenComponent } from './instellingen/instellingen.component';
     MatMenuModule,
     FormsModule,
     HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

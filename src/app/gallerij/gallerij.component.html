@@ -1,1 +1,20 @@
-<p>gallerij works!</p>
+<div class="gallery-section section">
+    <h2>Fotogalerij</h2>
+
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <div class="gallery-item" *ngFor="let img of images; let i = index; trackBy: trackByImg">
+                <img [src]="img" alt="Galerij foto {{i}}" loading="lazy"
+                (click)="openLightbox(i)" />
+            </div>
+
+            <p *ngIf="images.length === 0" class="empty-message">
+                Nog geen foto's beschikbaar...
+            </p>
+        </div>
+    </div>
+
+    <app-lightbox *ngIf="selectedIndex !== null" [images]="images" [startIndex]="selectedIndex!"
+        (close)="closeLightbox()">
+    </app-lightbox>
+</div>

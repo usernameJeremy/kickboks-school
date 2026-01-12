@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { CrudService } from '../services/crud.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
     selector: 'app-team',
@@ -12,11 +13,12 @@ export class AdminComponent {
         email: '',
         password: ''
     };
- 
+    selectedFile: File | null = null;
 
     constructor(
       private crudService: CrudService,
       private router: Router,
+      private http: HttpClient
     ) {}
     
    async onSubmit() {
@@ -32,6 +34,28 @@ export class AdminComponent {
         });
     }
 
+    onFileSelected(event: any): void {
+      this.selectedFile = event.target.files[0];
+    }
+  
+    // async uploadFile() {
+    //   if (!this.selectedFile) return;
+  
+    //   const formData = new FormData();
+    //   formData.append('file', this.selectedFile);
+
+  
+    //   this.http.post('http://localhost:3000/users/file', formData, {
+    //   responseType: 'json',
+    //   params: {
+    //     country: 'Netherlands', 
+    //     groupString: 'Voorgerechten,Hoofdgerechten,Dranken' 
+    //   }
+    // }).subscribe({
+    //   next: (response) => console.log('Response:', response),
+    //   error: (error) => console.error('Error:', error),
+    // });
+    // }
 
     
 }

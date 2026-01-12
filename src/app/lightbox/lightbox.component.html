@@ -1,0 +1,17 @@
+<div class="lightbox-backdrop" (click)="closeOnBackdrop($event)">
+    <div class="lightbox-content">
+  
+      <!-- Close button -->
+      <button class="close-btn" (click)="close.emit()">×</button>
+  
+      <!-- Navigatie arrows -->
+      <button class="nav-arrow left" (click)="prev()">‹</button>
+      <button class="nav-arrow right" (click)="next()">›</button>
+  
+      <!-- Huidige afbeelding -->
+      <img [src]="images[currentIndex]" alt="Uitvergrote foto" class="lightbox-img" />
+  
+      <!-- Optioneel: teller -->
+      <div class="counter">{{ currentIndex + 1 }} / {{ images.length }}</div>
+    </div>
+  </div>
